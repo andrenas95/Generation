@@ -10,13 +10,13 @@ console.log('=======================')
 var produto;
 var quantidade;
 
-console.log("\nProdutos ===========================")
-console.log("\n 1-- Cachorro Quente =====R$ 10,00");
-console.log("\n 2-- X-Salada ========== R$ 15,00")
-console.log("\n 3-- X-Bacon =========== R$ 18,00");
-console.log("\n 4-- Bauru ============= R$ 12,00 ");
-console.log("\n 5-- Refrigerante ======= R$ 8,00");
-console.log("\n 6-- Suco de laranja ==== R$ 13,00 ");
+console.log(" Escolha uma Opção 1 a 6 =========")
+console.log(" 1-- Cachorro Quente =====R$ 10,00");
+console.log(" 2-- X-Salada ========== R$ 15,00")
+console.log(" 3-- X-Bacon =========== R$ 18,00");
+console.log(" 4-- Bauru ============= R$ 12,00 ");
+console.log(" 5-- Refrigerante ======= R$ 8,00");
+console.log(" 6-- Suco de laranja ==== R$ 13,00 ");
 console.log("======================================")
 produto = leia.questionInt("\nDigite o Codigo do Produto abaixo: ")
 
