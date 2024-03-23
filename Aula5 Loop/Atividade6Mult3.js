@@ -1,10 +1,10 @@
 const leia = require('readline-sync');
 console.log('=======================')
-console.log('       MULTIPLO DE     ')
+console.log('       MULTIPLO DE 3   ')
 console.log('=======================')
 
 		let num = 0
-		let total = 0
+		let total = 0w
 		let contador = 0
 		var media
 		
