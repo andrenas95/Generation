@@ -1,6 +1,7 @@
 ﻿import readlinesync = require("readline-sync");
 import { colors } from "./src/util/Cores";
 import { Conta } from "./src/model/Conta"
+import { ContaCorrente } from "./src/model/ContaCorrente";
 
 export function main() {
 
@@ -26,6 +27,22 @@ export function main() {
     // c3.visualizar();
     // let c4: Conta = new Conta(4, 123, 1, "Francisca", 1000000);
     // c4.visualizar();
+
+    // Depositar dinheiro na Conta
+    console.log("n\Depositar R$ 5000.00 na Conta: ");
+    c1.depositar(5000);
+    c1.visualizar();
+
+    const cc1: ContaCorrente = new ContaCorrente(2, 456, 1, "Yasmine Lamark", 500000, 1000);
+    cc1.visualizar();
+    
+    cc1.sacar(1000);
+
+    cc1.visualizar();
+
+    cc1.depositar(5000);
+
+    cc1.visualizar();
 
     while (true) {
 
@@ -124,7 +141,7 @@ export function main() {
 /* Função com os dados da pessoa desenvolvedora */
 function sobre(): void {
     console.log("\n*****************************************************");
-    console.log("Projeto Desenvolvido por: ");
+    console.log("Projeto Desenvolvido por: André Luiz Nascimento Pinto");
     console.log("Generation Brasil - generation@generation.org");
     console.log("github.com/conteudoGeneration");
     console.log("*******************************************************");
