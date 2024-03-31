@@ -2,8 +2,9 @@
 import { colors } from "./src/util/Cores";
 import { Conta } from "./src/model/Conta"
 import { ContaCorrente } from "./src/model/ContaCorrente";
+import { ContaPoupança } from "./src/model/ContaPoupança";
 
-export function main() {
+export function main() {   
 
     let opcao: number;
     let c1: Conta = new Conta(1, 123, 1, "Natasha", 1000000);
@@ -44,6 +45,13 @@ export function main() {
 
     cc1.visualizar();
 
+    // Conta Poupança
+    
+    const CP: ContaPoupança = new ContaPoupança(3250, 456, 13, "Yasmine", 1000);
+    CP.sacar(100);
+    CP.visualizar();
+
+
     while (true) {
 
         console.log(colors.bg.black, colors.fg.white, 
@@ -72,7 +80,7 @@ export function main() {
 
         if (opcao == 9) {
             console.log(colors.fg.greenstrong, 
-                "\nBanco das Américas - O seu Futuro começa aqui!");
+                "\nBanco das Américas - A sua História começa aqui!");
             sobre();
             console.log(colors.reset, "");
             process.exit(0);

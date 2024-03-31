@@ -128,7 +128,7 @@ public visualizar(): void{
            break;  
        case 2:
            tipo = "Conta Poupança";
-           break; 
+           break;     
     }
 
     console.log("*********************************************");
