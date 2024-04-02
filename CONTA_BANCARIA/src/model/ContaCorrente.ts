@@ -3,7 +3,6 @@ import { Conta } from "./Conta";
 export class ContaCorrente extends Conta{
     
   private _limite: number;
-    saldo: any;
 
 
 	constructor(numero: number, agencia: number, tipo:  number,
@@ -31,12 +30,12 @@ export class ContaCorrente extends Conta{
 public sacar(valor: number): boolean{
 
     if((this.saldo + this.limite) >= valor){
-       this.saldo = this.saldo - valor // Mudar
+       this.saldo = this.saldo - valor 
         return true;
  
     }
 
-  console.log("\nSaldo Insuficiente!"); // Mudar
+  console.log("\nSaldo Insuficiente!"); 
   return false;
  
  }

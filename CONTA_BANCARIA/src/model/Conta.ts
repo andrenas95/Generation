@@ -1,4 +1,7 @@
-export class Conta{
+﻿export abstract class Conta{
+    // numero(numero: any) {
+    //     throw new Error("Method not implemented.");
+    // }
 
     // Atributos do Objeto da classe Conta
    private _numero: number;
@@ -22,7 +25,7 @@ constructor(numero: number, agencia: number, tipo:  number, titular: string, sal
  * Getter numero
  * @return {number}
  */
-public get_numero(): number {
+public get numero(): number {
     return this._numero;
 }
 
@@ -30,7 +33,7 @@ public get_numero(): number {
  * Getter agencia
  * @return {number}
  */
-public get_agencia(): number {
+public get agencia(): number {
     return this._agencia;
 }
 
@@ -38,7 +41,7 @@ public get_agencia(): number {
  * Getter tipo
  * @return { number}
  */
-public get_tipo():  number {
+public get tipo():  number {
     return this._tipo;
 }
 
@@ -46,7 +49,7 @@ public get_tipo():  number {
  * Getter titular
  * @return {string}
  */
-public get_titular(): string {
+public get titular(): string {
     return this._titular;
 }
 
@@ -54,7 +57,7 @@ public get_titular(): string {
  * Getter saldo
  * @return {number}
  */
-public get_saldo(): number {
+public get saldo(): number {
     return this._saldo;
 }
 
@@ -62,7 +65,7 @@ public get_saldo(): number {
  * Setter numero
  * @param {number} value
  */
-public set_numero(value: number) {
+public set numero(value: number) {
     this._numero = value;
 }
 
@@ -70,7 +73,7 @@ public set_numero(value: number) {
  * Setter agencia
  * @param {number} value
  */
-public set_agencia(value: number) {
+public set agencia(value: number) {
     this._agencia = value;
 }
 
@@ -78,7 +81,7 @@ public set_agencia(value: number) {
  * Setter tipo
  * @param { number} value
  */
-public set_tipo(value:  number) {
+public set tipo(value:  number) {
     this._tipo = value;
 }
 
@@ -86,7 +89,7 @@ public set_tipo(value:  number) {
  * Setter titular
  * @param {string} value
  */
-public set_titular(value: string) {
+public set titular(value: string) {
     this._titular = value;
 }
 
@@ -94,7 +97,7 @@ public set_titular(value: string) {
  * Setter saldo
  * @param {number} value
  */
-public set_saldo(value: number) {
+public set saldo(value: number) {
     this._saldo = value;
 }
 
@@ -139,5 +142,5 @@ public visualizar(): void{
     console.log(`Tipo da Conta: ${this._tipo}`);
     console.log(`Titular da Conta: ${this._titular}`);
     console.log(`Saldo da Conta: ${this._saldo}`);
-}
+  } 
 }
