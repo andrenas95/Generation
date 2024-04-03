@@ -8,7 +8,7 @@ import { ContaController } from "./src/Controller/ContaController";
 
 export function main() {   
 
-    let opcao, numero, agencia, tipo, saldo, limite, aniversario: number;
+    let opcao, numero, agencia, tipo, saldo, limite, aniversario, valor, numeroDestino: number;
     let titular: string;
     const tipoConta = ['Conta Corrente', 'Conta Poupanca'];
 
@@ -173,6 +173,16 @@ export function main() {
                         case 6:
                             console.log(colors.fg.whitestrong,
                                 "\n\nSaque\n\n", colors.reset);
+
+                            console.log("Digite o Número da Conta: ")
+                            numero = readlinesync.questionInt("")
+
+                            console.log("Digite o Saldo da Conta: ")
+                            valor = readlinesync.questionFloat("")
+
+                            Conta.sacar (numero, valor);
+
+
                             keyPress()
                             break;
                         case 7:
