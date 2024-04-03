@@ -1,9 +1,9 @@
-import {Transporte} from "./Transporte"
+import { Transporte } from "./Transporte"
 
 export class Terrestre extends Transporte{
 
     private _numeroRodas: number;
-    private _velocidade: number
+    private _velocidade: number;
 
     constructor(capacidade: number, numeroRodas: number, velocidade: number){
         super(capacidade);
@@ -11,6 +11,7 @@ export class Terrestre extends Transporte{
         this._velocidade = velocidade;
 
 }
+
     /**
      * Getter numeroRodas
      * @return {number}
@@ -20,23 +21,42 @@ export class Terrestre extends Transporte{
 	}
 
     /**
+     * Getter velocidade
+     * @return {number}
+     */
+	public get velocidade(): number {
+		return this._velocidade;
+	}
+
+    /**
      * Setter numeroRodas
      * @param {number} value
      */
 	public set numeroRodas(value: number) {
 		this._numeroRodas = value;
 	}
-   
-    protected
 
+    /**
+     * Setter velocidade
+     * @param {number} value
+     */
+	public set velocidade(value: number) {
+		this._velocidade = value;
+	}
 
+    
+    protected calcularAliquota(percentual: number): number{
+        return percentual / 100;
 
-    }
-
+    }   
 public visualizar(): void {
     super.visualizar()
     console.log("Numero de rodas: " + this.numeroRodas)
-    console.log("Velocidade: " + )
+    console.log("Velocidade: " + this.velocidade);
+
+
+}
+
 
 
 }

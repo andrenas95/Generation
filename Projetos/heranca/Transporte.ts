@@ -1,11 +1,15 @@
-export class Tranbsporte{
+export class Transporte{
 
-    private _capacidade: number;
+    private _capacidade: number; 
 
-    constructor(_capacidade : number) {
+
+	constructor(capacidade: number) {
+		this._capacidade = capacidade;
+	}
+
 
     /**
-     * Getter capacidade
+     * Get capacidade
      * @return {number}
      */
 	public get capacidade(): number {
@@ -13,28 +17,20 @@ export class Tranbsporte{
 	}
 
     /**
-     * Setter capacidade
+     * Set capacidade
      * @param {number} value
      */
 	public set capacidade(value: number) {
 		this._capacidade = value;
 	}
-this._capacidade = _capacidade}
-
-public visualizar() void; 
-console.log("***********************************");
-console.log("Meio de Transporte")
-console.log("***********************************");
-console.log("Capacidade: " + this._capacidade);
-
-}
-
-
-
-
-
-
-
+    
+    public visualizar(): void{
+        console.log("************************")
+        console.log("\nMeio de Transporte.")
+        console.log("************************")
+        console.log("Capacidade: " + this._capacidade)
+    }
 
 
 }
+   

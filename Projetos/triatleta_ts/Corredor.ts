@@ -1,12 +1,12 @@
 ﻿import { Atleta } from "./Atleta";
 
-export class Ciclista extends Atleta {
+export class Corredor extends Atleta {
 
     constructor (nome: string){
         super(nome);
     }
 
-    public pedalar(): void{
-        console.log("Pedalando...");
+    public correr(): void{
+        console.log("Correndo...");
     }
 }
